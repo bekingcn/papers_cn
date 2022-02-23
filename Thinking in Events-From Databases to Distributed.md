@@ -1,9 +1,20 @@
 # Thinking in Events: From Databases to Distributed Collaboration Software
 
-在第 15 届 ACM 分布式和基于事件的系统 (DEBS) 国际会议上的主题演讲
-马丁克莱普曼 
-剑桥大学 英国剑桥 
-mk428@cst.cam.ac.uk
+    在第 15 届 ACM 分布式和基于事件的系统 (DEBS) 国际会议上的主题演讲
+    马丁克莱普曼 
+    剑桥大学 英国剑桥 
+    mk428@cst.cam.ac.uk
+
+    ACM Reference Format:
+    Martin Kleppmann. 2021. Thinking in Events: From Databases to Distributed Collaboration Software: Keynote at the 15th ACM International Conference on Distributed and Event-Based Systems (DEBS). In The 15th ACM International Conference on Distributed and Event-based Systems (DEBS ’21), June 28-July 2, 2021, Virtual Event, Italy. ACM, New York, NY, USA, 10 pages.
+    https://doi.org/10.1145/3465480.3467835
+
+    Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored.
+    For all other uses, contact the owner/author(s).
+    DEBS ’21, June 28-July 2, 2021, Virtual Event, Italy
+    © 2021 Copyright held by the owner/author(s).
+    ACM ISBN 978-1-4503-8555-8/21/06.
+    https://doi.org/10.1145/3465480.3467835
  
 ## 摘要
 在本主题演讲中，我对基于事件的分布式系统的前景进行了主观但系统的概述，重点介绍了我在过去十年中从事的两个领域：使用 Apache Kafka 和相关工具进行大规模流处理，以及基于Google Docs 风格实时协作软件。虽然这些乍一看似乎是非常不同的主题，但也有一些重要的重叠点。本文列出了基于事件的系统的分类法，显示了它们的共性和差异所在。它还强调了在基于事件的系统的实现中出现的一些关键权衡，这些权衡取自分布式系统理论和实际部署的经验。最后，本文概述了该领域的一些开放性研究问题。
@@ -15,17 +26,6 @@ mk428@cst.cam.ac.uk
 
 ### 关键词
 流处理、事件溯源、状态机复制、CRDT、实时协作
-
-### ACM Reference Format:
-Martin Kleppmann. 2021. Thinking in Events: From Databases to Distributed Collaboration Software: Keynote at the 15th ACM International Conference on Distributed and Event-Based Systems (DEBS). In The 15th ACM International Conference on Distributed and Event-based Systems (DEBS ’21), June 28-July 2, 2021, Virtual Event, Italy. ACM, New York, NY, USA, 10 pages.
-https://doi.org/10.1145/3465480.3467835
-
-Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored.
-For all other uses, contact the owner/author(s).
-DEBS ’21, June 28-July 2, 2021, Virtual Event, Italy
-© 2021 Copyright held by the owner/author(s).
-ACM ISBN 978-1-4503-8555-8/21/06.
-https://doi.org/10.1145/3465480.3467835
 
 ## 1 介绍
 Event一词在计算的不同分支中意味着许多不同的事物。本文的目标是阐明、分类和区分一些主要的基于事件的系统系列，重点是分布式系统。
