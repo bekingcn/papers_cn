@@ -47,7 +47,7 @@ Orca[45] 是一种模块化查询优化器，用于 Greenplum 和 HAWQ 等数据
 
 Spark SQL [3] 扩展了 Apache Spark 以支持 SQL 查询执行，它还可以像 Calcite 中一样在多个数据源上执行查询。然而，尽管 Spark SQL 中的 Catalyst 优化器也试图最小化查询执行成本，但它缺乏 Calcite 使用的动态编程方法，并且有陷入局部最小值的风险。
 
-逻辑代数。然后，Algebricks [6] 是一种查询编译器架构，它为大数据查询处理提供了与数据模型无关的代数层和编译器框架。高级语言被编译为 Algebricks 逻辑代数。然后，Algebricks 生成针对 Hyracks 并行处理后端的优化作业。虽然 Calcite 与 Algebricks 都采用了模块化方法，但 Calcite 还包括对基于成本的优化的支持。在当前版本的 Calcite 中，查询优化器架构使用基于 Volcano 的基于动态规划的规划 [20] 具有多阶段优化的扩展，如 Orca [45]。尽管原则上 Algebricks 可以支持多个处理后端（例如 Apache Tez、Spark），但 Calcite 多年来一直为各种后端提供经过充分测试的支持。
+Algebricks [6] 是一种查询编译器架构，它为大数据查询处理提供了与数据模型无关的代数层和编译器框架。高级语言被编译为 Algebricks 逻辑代数。然后，Algebricks 生成针对 Hyracks 并行处理后端的优化作业。虽然 Calcite 与 Algebricks 都采用了模块化方法，但 Calcite 还包括对基于成本的优化的支持。在当前版本的 Calcite 中，查询优化器架构使用基于 Volcano 的基于动态规划的规划 [20] 具有多阶段优化的扩展，如 Orca [45]。尽管原则上 Algebricks 可以支持多个处理后端（例如 Apache Tez、Spark），但 Calcite 多年来一直为各种后端提供经过充分测试的支持。
 
 Garlic [7]是一个异构数据管理系统，它在一个统一的对象模型下表示来自多个系统的数据。但是，Garlic 不支持跨不同系统的查询优化，而是依赖每个系统来优化自己的查询。
 
